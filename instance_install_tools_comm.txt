@@ -1,0 +1,36 @@
+#apache server kurulumu
+sudo yum update -y
+
+sudo yum install -y httpd
+
+sudo systemctl status httpd
+
+sudo systemctl start httpd
+sudo systemctl enable httpd
+
+________________________________________________________________________
+#MYSQL kurulumu
+sudo yum install -y mysql
+
+sudo systemctl status mysqld
+
+sudo systemctl start mysqld
+
+sudo systemctl enable mysqld
+________________________________________________________________________
+
+#PHP kurulumu
+
+sudo yum install -y php
+
+________________________________________________________
+
+sudo systemctl restart httpd
+
+___________________________________________________________________
+
+sudo yum install -y amazon-efs-utils
+
+________________________________________________________
+
+sudo yum install -y cronie
